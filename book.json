@@ -1,7 +1,7 @@
 {
-  "title": "jsliang 的文档库",
-  "author": "梁峻荣 - jsliang",
-  "description": "jsliang 的文档库. 里面包含了个人撰写的所有前端文章，例如 Vue、React,、ECharts、微信小程序等……",
+  "title": "bin 的个人文档库",
+  "author": "李斌 - leo-bin",
+  "description": "bin 的个人文档库. 里面包含了个人撰写的所有学习文章，例如春招+秋招面试经验+计算机基础以及Java等……",
   "language": "zh-hans",
   "styles": {
     "website": "./public-repertory/css/gitbook-configure.css"
@@ -21,20 +21,22 @@
     "donate",
     "tbfed-pagefooter",
     "baidu-tongji",
-    "anchor-navigation-ex"
+    "anchor-navigation-ex",
+	"pageview-count",
+	"expandable-chapters"
   ],
   "pluginsConfig": {
     "github-buttons": {
       "buttons": [
         {
-          "user": "LiangJunrong",
-          "repo": "document-library", 
+          "user": "leo-bin",
+          "repo": "coding-bin", 
           "type": "star",
           "count": true,
           "size": "small"
         }, 
         {
-          "user": "LiangJunrong",
+          "user": "leo-bin",
           "width": "160", 
           "type": "follow", 
           "count": true,
@@ -58,7 +60,7 @@
       }
     },
     "tbfed-pagefooter": {
-      "copyright":"Copyright &copy jsliang.top 2019",
+      "copyright":"Copyright &copy  leo-bin",
       "modify_label": "该文件修订时间：",
       "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
