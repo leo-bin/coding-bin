@@ -69,7 +69,7 @@ public class LRUCache<K, V> extends LinkedHashMap<K, V> {
 
 ## 测试结果
 
-
+![](https://gitee.com/leobins/coding-bin/blob/master/算法/img/lruV1测试结果.bmp)
 
 ```java
 package com.bins.algorithm.lru;
@@ -278,7 +278,7 @@ public class LRUCacheV2 {
 
 ## 测试结果
 
-
+![](https://gitee.com/leobins/coding-bin/blob/master/算法/img/lruV2测试结果.bmp)
 
 ```java
     public static void main(String[] args) {
