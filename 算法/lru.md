@@ -67,9 +67,9 @@ public class LRUCache<K, V> extends LinkedHashMap<K, V> {
 
 
 
-## 测试结果
+### 测试结果
 
-![](https://gitee.com/leobins/coding-bin/blob/master/算法/img/lruV1测试结果.bmp)
+![JxCWY4.jpg](https://s1.ax1x.com/2020/05/02/JxCWY4.jpg)
 
 ```java
 package com.bins.algorithm.lru;
@@ -118,13 +118,16 @@ public class LRUTest {
 
 ## 二  使用HashMap+双向链表实现
 
-
-
 ```xml
-原理：
+1.我们可以利用双向链表的特点，分别设置一个头指针和尾指针，从而方便的进行双向遍历。
+2.要想实现put和get操作都是O(1)的时间复杂度我们使用HashMap来存储我们的双向链表的节点。
+3.put操作需要做两件事情，一是检查缓存空间是否达到预期阈值，如果没满，直接存map然后修改双向链表的指向。
+4.二是如果要put的元素已经存在过了，那么这次put就相当于update，我们需要更新下该元素的访问频率。
+5.访问频率本质上就是先在双向链表中将该元素删掉，然后重新添加到链表尾部。
+6.如果put的时候达到了阈值，那就需要做淘汰，根据LRU的特性应该将最近最少使用过的元素淘汰掉，我们直接将链表头的元素删掉然后重新调正双向链表就行。
 ```
 
-
+### 代码如下：
 
 ```java
 package com.bins.algorithm.lru;
@@ -276,9 +279,9 @@ public class LRUCacheV2 {
 
 
 
-## 测试结果
+### 测试结果
 
-![](https://gitee.com/leobins/coding-bin/blob/master/算法/img/lruV2测试结果.bmp)
+![JxPVpj.jpg](https://s1.ax1x.com/2020/05/02/JxPVpj.jpg)
 
 ```java
     public static void main(String[] args) {
@@ -305,6 +308,6 @@ public class LRUCacheV2 {
 ## 总结
 
 ```xml
-这里写测试结论和小结。。。
+这里写测试结论和小结。。。 
 ```
 
